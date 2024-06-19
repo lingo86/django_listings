@@ -27,8 +27,8 @@ class Listings(models.Model):
     address = models.CharField(max_length=100)
     main_photo = models.ImageField()
     photo_1 = models.ImageField(blank=True)
-    #list_date = models.DateTimeField(default=now)
-    list_date = models.DateField(auto_now_add=True)
+    list_date = models.DateTimeField(default=now)
+    #list_date = models.DateField(auto_now_add=True)
     contact_email = models.CharField(max_length=50)
 
     def __str__(self):
