@@ -11,7 +11,9 @@
     <p><b>Listed: </b>{{listing.list_date}}</p>
     <p><b>Email: </b>{{listing.contact_email}}</p>
     <ul>
-      <a class="btn" href="">View Listing</a>
+      <a class="btn" href="{% url 'listings:detail' listing.id %}"
+        >View Listing</a
+      >
     </ul>
 
     <hr />
